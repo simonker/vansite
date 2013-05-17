@@ -1,0 +1,15 @@
+<h1>Adminsection#createuser</h1>
+
+<div class="user new">
+  <h2>Create Admin User</h2>
+
+  <%= form_for(:admin_user, :url => {:action => 'create'}) do |f| %>
+
+    <%= render(:partial => 'form', :locals => {:f => f} ) %>
+  
+    <div class="form-buttons">
+      <%= submit_tag('Create Admin User') %>
+    </div>
+  
+  <% end %>
+</div>
